@@ -1,11 +1,11 @@
 
 
 const generateHTML = (managerCard, engineerCard, internCard) => {
-	return `
+    return `
     <!DOCTYPE html>
     <html lang="en">
         <head>
-            <title>Team Generator</title>
+            <title>My Team</title>
             <!-- Required meta tags -->
             <meta charset="utf-8" />
             <meta
@@ -13,42 +13,20 @@ const generateHTML = (managerCard, engineerCard, internCard) => {
                 content="width=device-width, initial-scale=1, shrink-to-fit=no"
             />
     
-            <!-- Bootstrap CSS -->
             <link
                 rel="stylesheet"
                 href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
                 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
                 crossorigin="anonymous"
             />
-            <link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-			crossorigin="anonymous"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Krona+One&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
-			rel="stylesheet"
-		/>
-            <link
-			href="https://fonts.googleapis.com/css?family=Krona+One&display=swap"
-			rel="stylesheet"
-        />
-        
-        
        
-    </style>
         </head>
         <body>
-            <div class="jumbotron jumbotron-fluid">
+            <div class="jumbotron jumbotron-fluid bg-dark">
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <h1 class="display-4 text-left">My Team!</h1>
+                            <h1 class="display-4 text-left text-danger">My Team</h1>
                             <p class="lead"></p>
                         </div>
                     </div>
@@ -56,7 +34,7 @@ const generateHTML = (managerCard, engineerCard, internCard) => {
             </div>
             <div class="container">
             <div class="row">
-                <div class="team-area col-12 d-flex justify-content-left mt-4">
+                <div class="col-12 d-flex justify-content-around mt-4">
                     ${managerCard}
                     ${engineerCard}
                     ${internCard}
@@ -64,8 +42,7 @@ const generateHTML = (managerCard, engineerCard, internCard) => {
             </div>
         </div>
     
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            
             <script
                 src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

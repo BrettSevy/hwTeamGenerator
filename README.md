@@ -17,7 +17,10 @@ The output will generate a team.html page in the output directory, that displays
 
 # Demo
 
-Deployment : node cli.js
+Deployment :
+```bash
+node cli.js
+```
 
 # Technologies used
 
